@@ -1,0 +1,22 @@
+﻿using Magicodes.ExporterAndImporter.Core;
+using System;
+
+namespace ServiceCore.Models
+{
+    [Exporter(Name = "Test HTML Template")]
+    internal class ReceiptInfo
+    {
+        public DateTime TradeTime { get; set; }
+        public string Name { get; set; }
+        public string IdNo { get; set; }
+        public decimal Amount { get; set; }
+        public string PaymentMethod { get; set; }
+        public string TradeStatus { get; set; }
+        public string Remark { get; set; }
+        public string Grade { get; set; }
+        public string Profession { get; set; }
+        public string Payee { get; set; }
+        public string UppercaseAmount { get; set; }
+        public string Code { get; set; }
+    }
+}
